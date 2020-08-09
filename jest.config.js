@@ -182,7 +182,7 @@ module.exports = {
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   watchPathIgnorePatterns: [
-    "\\\\src\\\\", "\\\\public\\\\",
+    "\\\\src\\\\", "\\\\public\\\\"
   ]
 
   // Whether to use watchman for file crawling
