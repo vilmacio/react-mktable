@@ -3,7 +3,7 @@ import Navbar from '../../components/NavBar'
 import './styles.css'
 
 function Main() {
-    const [arrayTable, setArrayTable] = useState([[null]])
+    const [arrayTable, setArrayTable] = useState([[null, '']])
 
     function addRow() {
         const newTable = arrayTable.slice(0)
@@ -22,28 +22,44 @@ function Main() {
             <Navbar />
             <div className="Main">
                 <div className="table-container">
-                    {
-                        arrayTable.map((row, indexRow) => (
-                            <div className="table-row" key={indexRow}>
-                                {
-                                    row.map((col, indexCol)=>(
-                                        <input 
-                                        type="text"
-                                        key={indexCol}
-                                        placeholder={`R${indexRow + 1}, C${indexCol + 1}`}
-                                        onChange={(input) => typeCell(indexRow, indexCol, input)}
-                                     />
-                                    ))
-                                }
-                                
-                            </div>
-                        ))
-                    }
+                    <div className="table-box">
+                        {
+                            arrayTable.map((row, indexRow) => (
+                                <div className="table-row" key={indexRow}>
+                                    <div className="control">
+                                        <div className="button-control delete-row">
+                                            <strong>X</strong>
+                                        </div>
+                                        {
+                                            row.map((col, indexCol) => (
+                                                <input
+                                                    type="text"
+                                                    key={indexCol}
+                                                    placeholder={`R${indexRow + 1}, C${indexCol + 1}`}
+                                                    onChange={(input) => typeCell(indexRow, indexCol, input)}
+                                                />
+                                            ))
+                                        }
+                                    </div>
+                                    <div className="control">
+                                        <div className="button-control add-col">
+                                            <strong>+</strong>
+                                        </div>
+                                        <div className="button-control delete-col">
+                                            <strong>-</strong>
+                                        </div>
 
+                                    </div>
+
+                                </div>
+                            ))
+                        }
+                    </div>
                     <div className="button" data-testid="add-row" onClick={addRow}>
                         <p><strong>+</strong> row</p>
                     </div>
                 </div>
+
 
                 <div className="data-structure">
                     <h2>Information</h2>

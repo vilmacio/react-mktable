@@ -1,16 +1,16 @@
 import '@testing-library/jest-dom/extend-expect';
 import React from 'react';
-import { render, waitForElement } from '@testing-library/react';
-import App from '../src/App.js';
+import { render, waitForElement, fireEvent } from '@testing-library/react';
+import Main from '../src/containers/Main'
 
-describe('Testing App Component', ()=>{
-  it('renders learn react link', async() => {
-    const { getByTestId } = render(<App />);
-    const linkElement = await waitForElement(()=>
-      getByTestId('title')
+describe('Testing Main Component', ()=>{
+  it('should add a row', async() => {
+    const { getByTestId } = render(<Main />);
+    const addButton = await waitForElement(()=>
+      getByTestId('add-row')
     )
-    linkElement.textContent = 'newText'
-    expect(linkElement.textContent).toBe('newText')
+    fireEvent.click(addButton)
+    expect(addButton.textContent).toBe('newText')
 
   });
 })
