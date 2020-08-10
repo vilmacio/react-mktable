@@ -9,8 +9,8 @@ describe('Testing App Component', ()=>{
     const linkElement = await waitForElement(()=>
       getByTestId('title')
     )
-    linkElement.setAttribute('textContent', 'novoTexto')
-    expect(linkElement.textContent).toBe('Roboto')
+    linkElement.textContent = 'newText'
+    expect(linkElement.textContent).toBe('newText')
 
   });
 })

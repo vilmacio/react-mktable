@@ -1,8 +1,9 @@
 import React from 'react';
+import Main from './containers/Main'
 
 function App() {
   return (
-    <h1 data-testid="title">Roboto</h1>
+    <Main />
   );
 }
 
