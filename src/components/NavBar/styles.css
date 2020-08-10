@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: space-between;
+    background-color: rgb(8, 21, 77);
+    
+}
+
+.navbar h1, p {
+    color: #fff
+}
+
+.navbar h1 {
+    margin-left: 20px;
+}
+
+.navbar p {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.navbar a p:hover {
+    color: #eeeeee;
+}
