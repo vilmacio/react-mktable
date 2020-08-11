@@ -6,7 +6,7 @@ function NavBar() {
         <div className="navbar">
             <h1>react-mktable</h1>
             <a href="https://github.com">
-                <p>View on GitHub</p>
+                <p>Repository</p>
             </a>
         </div>
     )
