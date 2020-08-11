@@ -25,3 +25,12 @@
 .navbar a p:hover {
     color: #eeeeee;
 }
+
+@media (max-width: 900px){
+    .navbar h1 {
+        font-size: 1.3rem;
+    }
+    .navbar p {
+        padding-top: 5px;
+    }
+}

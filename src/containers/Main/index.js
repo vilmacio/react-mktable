@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/NavBar'
+import sizeof from 'object-sizeof'
 import './styles.css'
 
 function Main() {
@@ -93,7 +94,7 @@ function Main() {
                         <p>Type: <strong>{typeof arrayTable}</strong></p>
                     </div>
                     <div className="info">
-                        <p>Size: </p>
+                    <p>Size: <strong>{sizeof(arrayTable)} Bytes</strong></p>
                     </div>
                     <div className="info">
                         <p>Data structure: <strong>{JSON.stringify(arrayTable)}</strong> </p>
