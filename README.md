@@ -8,7 +8,7 @@
 
 ## Usage
 ### As user
-
+The app is published at https://vilmacio22.github.io/react-mktable/
 ### As developer
 ```bash
 # Clone this repository
