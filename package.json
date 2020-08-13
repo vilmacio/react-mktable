@@ -1,8 +1,8 @@
 {
   "name": "react-mktable",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "homepage":"build/index.html",
+  "homepage": "http://vilmacio22.github.io/react-mktable/",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -50,6 +50,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
@@ -67,6 +68,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --watch",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
