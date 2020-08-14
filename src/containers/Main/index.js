@@ -4,11 +4,11 @@ import sizeof from 'object-sizeof'
 import './styles.css'
 
 function Main() {
-    const [arrayTable, setArrayTable] = useState([[null]])
+    const [arrayTable, setArrayTable] = useState([[undefined]])
 
     function addRow() {
         const newTable = arrayTable.slice(0)
-        newTable.push([null])
+        newTable.push([undefined])
         setArrayTable(newTable)
     }
 
@@ -22,7 +22,7 @@ function Main() {
 
     function addCol(indexRow) {
         const newTable = arrayTable.slice(0)
-        newTable[indexRow].push(null)
+        newTable[indexRow].push(undefined)
         setArrayTable(newTable)
     }
 
@@ -48,7 +48,7 @@ function Main() {
             <Navbar />
             <div className="Main">
                 <div className="table-container">
-                    <div className="table-box">
+                    <div className="table-box" data-testid="table">
                         {
                             arrayTable.map((row, indexRow) => (
                                 <div className="table-row" key={indexRow}>
@@ -69,7 +69,7 @@ function Main() {
                                         }
                                     </div>
                                     <div className="control">
-                                        <div className="button-control add-col" onClick={() => addCol(indexRow)}>
+                                        <div className="button-control add-col" data-testid="add-col" onClick={() => addCol(indexRow)}>
                                             <strong>+</strong>
                                         </div>
                                         <div className="button-control delete-col" onClick={() => deleteCol(indexRow)}>
