@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/NavBar'
 import sizeof from 'object-sizeof'
 import './styles.css'
@@ -34,7 +34,7 @@ function Main() {
             return
         }
         deleteRow(indexRow)
-        
+
     }
 
     function typeCell(indexRow, indexCol, input) {
@@ -48,14 +48,24 @@ function Main() {
             <Navbar />
             <div className="Main">
                 <div className="table-container">
-                    <div className="table-box" data-testid="table">
-                        {
-                            arrayTable.map((row, indexRow) => (
-                                <div className="table-row" key={indexRow}>
-                                    <div className="control">
+                    <div className="controls">
+                        <div className="control-row">
+                            {
+                                arrayTable.map((row, indexRow) => (
+                                    <div className="control" key={indexRow}>
                                         <div className="button-control delete-row" onClick={() => deleteRow(indexRow)}>
                                             <strong>X</strong>
                                         </div>
+                                    </div>
+
+                                ))
+                            }
+                        </div>
+
+                        <div className="table-box" data-testid="table">
+                            {
+                                arrayTable.map((row, indexRow) => (
+                                    <div className="table-row" key={indexRow}>
                                         {
                                             row.map((col, indexCol) => (
                                                 <input
@@ -68,6 +78,12 @@ function Main() {
                                             ))
                                         }
                                     </div>
+                                ))
+                            }
+                        </div>
+                        <div className="control-col">
+                            {
+                                arrayTable.map((row, indexRow) => (
                                     <div className="control">
                                         <div className="button-control add-col" data-testid="add-col" onClick={() => addCol(indexRow)}>
                                             <strong>+</strong>
@@ -77,15 +93,16 @@ function Main() {
                                         </div>
 
                                     </div>
-
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </div>
                     <div className="button" data-testid="add-row" onClick={addRow}>
                         <p><strong>+</strong> row</p>
                     </div>
+
                 </div>
+
 
 
                 <div className="data-structure">
@@ -94,7 +111,7 @@ function Main() {
                         <p>Type: <strong>{typeof arrayTable}</strong></p>
                     </div>
                     <div className="info">
-                    <p>Size: <strong>{sizeof(arrayTable)} Bytes</strong></p>
+                        <p>Size: <strong>{sizeof(arrayTable)} Bytes</strong></p>
                     </div>
                     <div className="info">
                         <p>Data structure: <strong>{JSON.stringify(arrayTable)}</strong> </p>
