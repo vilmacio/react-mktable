@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Navbar from '../../components/NavBar'
 import sizeof from 'object-sizeof'
 import './styles.css'
