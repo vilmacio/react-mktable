@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-mktable/static/css/main.351ddba4.chunk.css",
-    "main.js": "/react-mktable/static/js/main.45b27891.chunk.js",
-    "main.js.map": "/react-mktable/static/js/main.45b27891.chunk.js.map",
+    "main.css": "/react-mktable/static/css/main.85cc5086.chunk.css",
+    "main.js": "/react-mktable/static/js/main.c03fce98.chunk.js",
+    "main.js.map": "/react-mktable/static/js/main.c03fce98.chunk.js.map",
     "runtime-main.js": "/react-mktable/static/js/runtime-main.ab5a4327.js",
     "runtime-main.js.map": "/react-mktable/static/js/runtime-main.ab5a4327.js.map",
     "static/js/2.af438431.chunk.js": "/react-mktable/static/js/2.af438431.chunk.js",
     "static/js/2.af438431.chunk.js.map": "/react-mktable/static/js/2.af438431.chunk.js.map",
     "index.html": "/react-mktable/index.html",
-    "precache-manifest.ac8fe0cb0565f35ea0208acb890abfd9.js": "/react-mktable/precache-manifest.ac8fe0cb0565f35ea0208acb890abfd9.js",
+    "precache-manifest.1e2955dd78f552cd84ef1992715041f0.js": "/react-mktable/precache-manifest.1e2955dd78f552cd84ef1992715041f0.js",
     "service-worker.js": "/react-mktable/service-worker.js",
-    "static/css/main.351ddba4.chunk.css.map": "/react-mktable/static/css/main.351ddba4.chunk.css.map",
+    "static/css/main.85cc5086.chunk.css.map": "/react-mktable/static/css/main.85cc5086.chunk.css.map",
     "static/js/2.af438431.chunk.js.LICENSE.txt": "/react-mktable/static/js/2.af438431.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab5a4327.js",
     "static/js/2.af438431.chunk.js",
-    "static/css/main.351ddba4.chunk.css",
-    "static/js/main.45b27891.chunk.js"
+    "static/css/main.85cc5086.chunk.css",
+    "static/js/main.c03fce98.chunk.js"
   ]
 }
