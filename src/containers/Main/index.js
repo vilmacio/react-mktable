@@ -61,26 +61,25 @@ function Main() {
                                 ))
                             }
                         </div>
-
-                        <div className="table-box" data-testid="table">
-                            {
-                                arrayTable.map((row, indexRow) => (
-                                    <div className="table-row" key={indexRow}>
-                                        {
-                                            row.map((col, indexCol) => (
-                                                <input
-                                                    type="text"
-                                                    key={indexCol}
-                                                    placeholder={`R${indexRow + 1}, C${indexCol + 1}`}
-                                                    onChange={(input) => typeCell(indexRow, indexCol, input)}
-                                                    value={col}
-                                                />
-                                            ))
-                                        }
-                                    </div>
-                                ))
-                            }
-                        </div>
+                            <div className="cells" data-testid="table">
+                                {
+                                    arrayTable.map((row, indexRow) => (
+                                        <div className="table-row" key={indexRow}>
+                                            {
+                                                row.map((col, indexCol) => (
+                                                    <input
+                                                        type="text"
+                                                        key={indexCol}
+                                                        placeholder={`R${indexRow + 1}, C${indexCol + 1}`}
+                                                        onChange={(input) => typeCell(indexRow, indexCol, input)}
+                                                        value={col}
+                                                    />
+                                                ))
+                                            }
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         <div className="control-col">
                             {
                                 arrayTable.map((row, indexRow) => (
