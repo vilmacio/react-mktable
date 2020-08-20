@@ -12,17 +12,17 @@
 
 .controls {
     display: flex;
-    min-height: 200px;
-    max-height: 200px;
-    overflow-x: auto;
+    min-height: 220px;
+    max-height: 220px;
     overflow-y: auto;
 }
 
-.table-box {
+.cells {
     width: 100%;
+    min-height: 220px;
+    height: 100%;
     border-top:gray 1px solid;
-    border-left:gray 1px solid;
-    border-right:gray 1px solid;
+    overflow-y: hidden;
 }
 
 .table-row {
@@ -46,6 +46,7 @@
 .control {
     display: flex;
     background-color: #f5f5f5;
+    border-bottom:#f5f5f5 1px solid;
 }
 
 .button-control {
