@@ -8,7 +8,7 @@
 
 ## Usage
 ### As user
-The app is published at https://vilmacio22.github.io/react-mktable/
+The app is published at https://vilmacio.github.io/react-mktable/
 ### As developer
 ```bash
 # Clone this repository
@@ -25,8 +25,8 @@ $ yarn start
 ```
 
 ## License
-This project is under the MIT license. See the [LICENSE](https://github.com/vilmacio22/react-mktable/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/vilmacio/react-mktable/blob/master/LICENSE) for more information.
 
 ---
 
-Created by [vilmacio22](https://github.com/vilmacio22)
+Created by [vilmacio](https://github.com/vilmacio)
